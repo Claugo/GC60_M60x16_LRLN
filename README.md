@@ -238,9 +238,10 @@ Per lanciare l'eseguibile passando i parametri di Magnitudo e Finestra (ad esemp
 Bash
 
 ```
-./GC60_M60x16_LRLN 10000000000000000000 100000
 ./GC60_M60x16_LRLN 10^19 100000
+./GC60_M60x16_LRLN 987963259786340 100000
 ./GC60_M60x16_LRLN 2^60 100000
+
 ```
 
 
