@@ -28,7 +28,11 @@ Il cambiamento fondamentale risiede nella transizione strutturale della ruota:
 10[1, 3, 7, 9, 13, 19, 21, 27, 31, 33, 37, 39, 43, 49, 51, 57]
 ```
 
-**A una struttura geometrica parallela a 16 colonne indipendenti:** $$ \large\overbrace{ 1\quad 7\quad 11\quad 13\quad 17\quad 19\quad 23\quad 29\quad 31\quad 37\quad 41\quad 43\quad 47\quad 49\quad 53\quad 59 }^{\mathrm{mod}\ 60} $$
+**A una struttura geometrica parallela a 16 colonne indipendenti:**
+
+$$ 
+\large\overbrace{ 1\quad 7\quad 11\quad 13\quad 17\quad 19\quad 23\quad 29\quad 31\quad 37\quad 41\quad 43\quad 47\quad 49\quad 53\quad 59 }^{\mathrm{mod}\ 60}
+$$
 
 ## Dall'Orizzontale al Verticale: Le Colonne Parallele
 
