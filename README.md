@@ -34,6 +34,7 @@ $$
 \large\overbrace{ 1\quad 7\quad 11\quad 13\quad 17\quad 19\quad 23\quad 29\quad 31\quad 37\quad 41\quad 43\quad 47\quad 49\quad 53\quad 59 }^{\mathrm{mod}\ 60}
 $$
 
+
 ## Dall'Orizzontale al Verticale: Le Colonne Parallele
 
 Se la struttura precedente si sviluppava in senso orizzontale, questa nuova architettura chiede di immaginare lo spazio numerico in senso **verticale**. I numeri si distribuiscono su colonne parallele autonome: ogni colonna accoglie ed elabora in totale isolamento esclusivamente i propri multipli e i propri numeri primi.
@@ -191,9 +192,9 @@ Quello che possiamo vedere dalla tabella sopra è una netta differenza sul tempo
 
 |**Magnitudo**|**Finestra (W)**|**Primi Rilevati**|**Tempo Totale GC-60**|**Tempo Primesieve**|**Rapporto di Velocità (Speedup)**|
 |---|---|---|---|---|---|
-|**10^17**|100.000|2.515|71 ms (0,071 s)|156 ms (0,156 s)|**GC-60 è ~2,2 volte più veloce**|
-|**10^18**|100.000|2.398|108 ms (0,108 s)|486 ms (0,486 s)|**GC-60 è ~4,5 volte più veloce**|
-|**10^19**|100.000|2.263|276 ms (0,276 s)|1.517 ms (1,517 s)|**GC-60 è ~5,5 volte più veloce**|
+|**$10^{17}$**|100.000|2.515|71 ms (0,071 s)|156 ms (0,156 s)|**GC-60 è ~2,2 volte più veloce**|
+|**$10^{18}$**|100.000|2.398|108 ms (0,108 s)|486 ms (0,486 s)|**GC-60 è ~4,5 volte più veloce**|
+|**$10^{19}$**|100.000|2.263|276 ms (0,276 s)|1.517 ms (1,517 s)|**GC-60 è ~5,5 volte più veloce**|
 
 ### Analisi e Spiegazione dei Risultati del Benchmark c++ vs primesieve
 
@@ -232,12 +233,14 @@ Bash
 g++ -O3 -march=native -fopenmp -mavx2 GC60_M60x16_LRLN.cpp -o GC60_M60x16_LRLN
 ```
 
-Per lanciare l'eseguibile passando i parametri di Magnitudo e Finestra (ad esempio $10^{18}$ e $100.000$):
+Per lanciare l'eseguibile passando i parametri di Magnitudo e Finestra (ad esempio $10^{19}$ e $100.000$):
 
 Bash
 
 ```
-./GC60_M60x16_LRLN 1000000000000000000 100000
+./GC60_M60x16_LRLN 10000000000000000000 100000
+./GC60_M60x16_LRLN 10^19 100000
+./GC60_M60x16_LRLN 2^60 100000
 ```
 
 
