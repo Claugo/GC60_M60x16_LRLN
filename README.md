@@ -118,7 +118,7 @@ Prendiamo come riferimento la partenza dall'origine per il numero **$p = 11$** (
 
 Qualsiasi multiplo presente in tabella può essere ricostruito matematicamente partendo dalle sue coordinate geometriche (Riga e Colonna) attraverso una semplice equazione lineare:
 
-$$\text{Multiplo} = (\text{Riga} \times 60) + \text{Colonna}$$
+$\text{Multiplo} = (\text{Riga} \times 60) + \text{Colonna}$
 
 Ogni valore risultante appartiene in modo **esclusivo e univoco** a quella specifica colonna e non comparirà mai in nessun'altra delle restanti 15.
 
@@ -144,7 +144,8 @@ Di conseguenza, per calcolare il valore numerico assoluto non basterà più appl
 $$\text{Numero Reale} = \text{Base del Segmento} + (\text{Riga Locale} \times 60) + \text{Colonna}$$
 
 
-_Dove $\text{Base del Segmento} = \text{Indice del Segmento} \times \text{SEGMENTO} \times 60$._
+_**Dove:**_
+$\text{Base del Segmento} = \text{Indice del Segmento} \times \text{SEGMENTO} \times 60$
 
 Questa scomposizione garantisce che ogni thread possa spogliare finestre numeriche a qualsiasi magnitudo mantenendo indici locali piccoli e leggeri, preservando la velocità hardware della CPU ed evitando l'uso di variabili troppo grandi all'interno dei cicli critici.
 
