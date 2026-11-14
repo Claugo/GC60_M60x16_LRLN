@@ -15,7 +15,7 @@ Per eliminare questo collo di bottiglia ed estendere la portata numerica del mot
 
 **In questi test è stato usato un altro tipo di computer molto più datato rispetto al Ryzen 7 usato in precedenza. Questo a dimostrazione di quanto l'algoritmo lavori molto bene anche su computer un po' datati**
 <br>
-### Piattaforma di Test #1: HP Pavilion Notebook (8 Thread)
+### Piattaforma di Test: HP Pavilion Notebook (8 Thread)
 
 - **Processore:** Intel Core i7-6700HQ (4 core / 8 thread, architettura Skylake-S, fino a 3,5 GHz)
     
