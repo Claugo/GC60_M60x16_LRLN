@@ -309,3 +309,11 @@ Questa analisi teorica evidenzia come il modello GC-60 non sia un sistema rigido
 Un aspetto cruciale che merita di essere evidenziato, e che differenzia nettamente questo approccio dai metodi della letteratura classica, riguarda l'efficienza legata alle dimensioni della ruota (_wheel factorization_). Nei crivelli tradizionali, l'aumento delle dimensioni del modulo (passando ad esempio da 30 a 210, 2310, ecc.) comporta storicamente un progressivo calo delle prestazioni reali a causa dell'aumento della complessità dell'algoritmo e della perdita di efficienza nella gestione della memoria cache.
 
 Questo paradigma viene modificato. Osservando sperimentalmente che il passaggio progressivo da 3, a 8, fino a 16 colonne, non indebolisce il sistema, ma al contrario gli conferisce maggiore forza e velocità. La ragione di questa inversione di tendenza risiede nel fatto che il nucleo strutturale rimane sempre ancorato alla stessa base matematica fondamentale dei primi primordiali ($2 \times 3 \times 5 = 30$), ma lo spazio numerico viene suddiviso e distribuito in modo puramente geometrico in base alla posizione dei residui. Invece di appesantire l'esecuzione all'interno di un unico flusso di calcolo, l'espansione del modello permette di segmentare i candidati in colonne sempre più sottili e tra loro totalmente indipendenti. Questo trasforma quello che nei crivelli classici rappresenta un noto punto critico in un potente fattore di accelerazione e parallelismo.
+
+---
+> **Aggiornamento — Versione V4.0 (64/128-bit e finestre fino a $10^9$)**
+> È disponibile la nuova evoluzione del codice con setaccio segmentato a 1-bit in cache L1 e commutazione automatica a 128-bit certificata fino a $10^{24}$:
+> * [Leggi la documentazione e i benchmark della V4.0](GC60_M60x16_LRLN_V4.md)
+> * [Apri il codice sorgente GC60_M60x16_LRLN_V4.cpp](GC60_M60x16_LRLN_V4.cpp)
+
+
